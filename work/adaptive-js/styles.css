@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* Css for Info Box */
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-weight:inherit;
+    width: fit-content;
+}
+
+.info{
+    display:block;
+	border:2px solid #999;
+	padding:0.625rem;
+    margin-right: 1rem;
+    font-size: 1.15em;
+    width: fit-content;
+}
+
+.info__label{
+	display:block;
+	margin:-1.25rem 0 0 0;
+    width: fit-content;
+	background:#fff;
+}
+
+/* Css for Form */
+.add-form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15em;
+}
+
+.add-form__submit{
+    margin-top: 0.5rem;
+}
+
+.label__input{
+    margin-left: 1rem;
+}
+
+
+/* Media Query for mobile view */
+@media screen and (max-width: 600px) {
+    .main-header{
+        font-size: 1.2em;
+    }
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-weight:inherit;
+    }
+    .info{
+        display:block;
+        border:2px solid #999;
+        padding:0.625rem;
+        font-size: 1.15em;
+        width: fit-content;
+        margin: 0;
+    }
+    .label{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .label__label{
+        width: 15%;
+    }
+    .label__input{
+        margin-left: 1.5rem;
+        width: 85%;
+    }
+}
+
+
+/* Media Query for Desktop view */
+@media screen and (min-width: 600px) {
+    .main-header{
+        font-size: 3em;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-weight:inherit;
+        width: inherit;
+    }
+    .label{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .label__input{
+        margin-left: 0;
+    }
+}

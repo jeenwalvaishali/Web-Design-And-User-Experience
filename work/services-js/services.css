@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #afd4ec;
+}
+
+.posts{
+    padding: 0;
+	margin: 3.125rem auto;
+	list-style: none;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post{
+    display: inline-block;
+	width: 50%;
+	padding: 2rem;
+	margin: 1rem;
+	font-family: 'PT Serif', serif;
+	background: #262a2b;
+	border: 0.0625rem solid #252727;
+	text-align: left;
+}
+
+.post__title{
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #91cdf5;
+	margin: 0;
+	top: 50px;
+	right: 10px;
+}
+
+.post__body{
+    padding-top: 1rem;
+    font-size: 1.1em;
+	line-height: 1.2em;
+	color: #b7b7b7;
+	margin-top: 0.312em;
+}
+
+.post__comments{
+	list-style:none;
+    padding: 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    padding: 1rem;
+    list-style:none;
+}
+
+.comment__data{
+    background-color: #d9e2e9; 
+    border-radius: 0.5rem;
+    padding:1rem;
+}
+
+.comment__info{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.comment__name{
+    width: 40%;
+}
+
+.comment_active{
+    display: block;
+}
+
+.comment_inactive{
+    display: none;
+}

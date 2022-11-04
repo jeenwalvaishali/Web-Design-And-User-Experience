@@ -1,0 +1,105 @@
+/* from https://css.gg/spinner, MIT License: https://css.gg/doc/licence */
+.gg-comment {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    color: #F50057;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 16px;
+    border: 2px solid;
+    border-bottom: 0;
+    box-shadow:
+    -6px 8px 0 -6px,
+    6px 8px 0 -6px
+   }
+   
+   .gg-comment::after,
+   .gg-comment::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px
+   }
+   
+   .gg-comment::before {
+    border: 2px solid;
+    border-top-color: transparent;
+    border-bottom-left-radius: 20px;
+    right: 4px;
+    bottom: -6px;
+    height: 6px
+   }
+   
+   .gg-comment::after {
+    height: 2px;
+    background: currentColor;
+    box-shadow: 0 4px 0 0;
+    left: 4px;
+    top: 4px
+   } 
+
+
+   .gg-mail,
+   .gg-mail::after {
+    display: inline-block;
+    margin-right: 0.5rem;
+    box-sizing: border-box;
+    height: 14px;
+    border: 2px solid
+   }
+   
+   .gg-mail {
+    overflow: hidden;
+    transform: scale(var(--ggs,1));
+    position: relative;
+    width: 18px;
+    border-radius: 2px
+   }
+   
+   .gg-mail::after {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    width: 14px;
+    transform: rotate(-45deg);
+    bottom: 3px;
+    left: 0
+   } 
+
+   .gg-user {
+    display: inline-block;
+    margin-right: 0.5rem;
+    transform: scale(var(--ggs,1));
+    box-sizing: border-box;
+    width: 12px;
+    height: 18px
+   }
+   
+   .gg-user::after,
+   .gg-user::before {
+    content: "";
+    display: inline-block;
+    margin-right: 0.5rem;
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid
+   }
+   
+   .gg-user::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 30px;
+    top: 0;
+    left: 2px
+   }
+   
+   .gg-user::after {
+    width: 12px;
+    height: 9px;
+    border-bottom: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    top: 9px
+   } 

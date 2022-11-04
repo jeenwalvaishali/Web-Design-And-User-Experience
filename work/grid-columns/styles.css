@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: 75px 1fr 2fr;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+header{
+    grid-column: col / span 12;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+}
+
+.header__logo{
+    padding-left: 0.5rem;
+}
+
+.header__title{
+    padding-left: 0.5rem;
+    padding-top:1rem;
+}
+
+main{
+    grid-column: col / span 12;
+    height: auto;
+}
+
+.main__title{
+   text-align: center;
+   padding: 1.5rem 0 1.5rem 0;
+}
+
+.card{
+   display: inline-grid;
+   width: 31%;
+   padding: 0.5rem;
+   height: 250px;
+   margin: 0.5rem;  
+   background-color: white;
+   font-weight: bold;
+   border: 0.1rem solid;
+   border-radius: 1rem;
+   border-color: blue;
+}
+
+.card__title{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card__more{
+    margin: auto;
+    width: fit-content;
+    background-color: #9acd32;
+    text-decoration-line: none;
+    border-radius: 1.2rem;
+    color: black;
+    padding: 0.5rem;
+}
+
+footer{
+    grid-column: col / span 12;
+    background-color: skyblue;
+}
+
+.footer__links{
+    columns: 3 auto;
+    bottom: 0;
+    position: absolute;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1em;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.footer__item{
+    columns: 3 auto;
+}

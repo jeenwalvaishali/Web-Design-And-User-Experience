@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="css/formstyle.css">
+</head>
+
+
+<body>
+  <div class="maindiv">
+    <nav class="nav">
+      <ul class="navmenu">
+         <li class="home">
+              <a href="home.html">Home</a>
+          </li>
+          <li class="aboutus">
+              <a href="about.html">AboutUs</a>
+          </li>
+          <li class="signup">
+              <a href="signup.html">SignUp</a>
+          </li>
+          <li class="signin">
+              <a href="signin.html">SignIn</a>
+          </li>
+      </ul>
+    </nav>
+    <div class="formheading" >Registration Form</div>
+    <form action="test.html" method="POST">
+    <div class="form">
+      <div class="field-main">
+       <div class="label">
+       <label for="name"><span>*</span>Enter User Name:</label>
+       </div>
+       <input id = "name" type="text" placeholder="Name" name="name" required>
+      </div>
+
+      <div class="field-main">
+      <div class="label">
+      <label for="email"><span>*</span>Enter User Email:</label>
+      </div>
+	    <input id="email" type="email" placeholder="Email" name="email" required>
+      </div>
+
+
+      <div class="checkbox">
+        <input id = "agree" type="checkbox" name="annoy_me">
+        <div class="label"> 
+        <label for="agree">Do you want us to send you annoying emails?</label>
+        </div>
+      </div>
+
+      <div class="field-main">
+      <div class="label"> 
+      <label for="tier-select"><span>*</span>Tier</label>
+      </div>
+        <select name="tier" id="tier-select" required>
+             <option value="">--Please select--</option>
+             <option value="1">Silver Tier</option>
+             <option value="2">Gold Tier</option>
+             <option value="3">Platinum Tier</option>
+        </select>   
+      </div>
+    
+      <div class="button">
+        <button type="submit">Submit</button>
+      </div>
+
+      <p><span>*</span> Indicates field required</p>
+    </div>
+	  
+   </form>
+  </div>
+</body>
+</html>

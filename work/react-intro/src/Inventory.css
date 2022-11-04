@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+.list-header{
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #34495E;
+  display: flex;
+  justify-content: left;
+  padding-left: 1rem;
+}
+
+.list-item{
+    font-size: 1.2em;
+    font-weight: bold;
+    width: auto;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .list-menu{
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gainsboro;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .label-count-input{
+    margin-top: 1rem;
+  }
+
+  .button-increase{
+    width: inherit;
+    background-color: white;
+    border: none;
+  }
+  
+  .button-decrease{
+    width: inherit;
+    background-color: white;
+    border: none;
+  }
+  
+  .button-increase-icon{
+    font-size: 2rem;
+  }
+
+  .list-item-reorder{
+    width: inherit;
+  }
+  
+  .button-reorder{
+    background-color: #34495E ;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transform-origin: top center; 
+    -webkit-animation: fadein 2s; 
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @media (prefers-reduced-motion) {
+    .button-reorder {
+      animation-name: dissolve;
+    }
+  }

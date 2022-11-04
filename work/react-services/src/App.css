@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e7e7e7;
+}
+
+.posts{
+    padding: 0;
+	margin: 3.125rem auto;
+	list-style: none;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post{
+    display: inline-block;
+	width: 50%;
+	margin: 1rem;
+	font-family: 'PT Serif', serif;
+	background: #ffffff;
+	border: 0.0625rem solid #252727;
+	text-align: left;
+}
+
+.post-parts{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+
+.post-first{
+	width: 1%;
+	background-color: #F50057;
+}
+
+.post-second{
+	padding: 1rem;
+}
+
+.post__title{
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #262a2b;
+	margin: 0;
+	top: 50px;
+	right: 10px;
+}
+
+.post__body{
+    padding-top: 1rem;
+    font-size: 1.1em;
+	line-height: 1.2em;
+	color: #515151;
+	margin-top: 0.312em;
+}
+
+.error{
+	display: flex;
+	flex-direction : column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.error-head{
+	font-size: 3em;
+	font-weight: bold;
+	color: #F50057;
+	font-family: 'PT Serif', serif;
+}
+
+.error-img{
+	width: 500px;
+	height: 400px;
+}
+
+.error-type{
+	font-size: 2em;
+	font-weight: bold;
+	color: #F50057;
+	font-family: 'PT Serif', serif;
+	margin-top: 3rem;
+	margin-bottom: 0;
+}
+
+.error-description{
+	font-size: 1.2em;
+	color: #F50057;
+	font-family: 'PT Serif', serif;
+	margin-top: 0.5rem;
+}
+
+
+.post__comments{
+	list-style:none;
+    padding: 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment{
+    list-style:none;
+	padding-top: 1rem;
+}
+
+.gg-comment-icon{
+	display: flex;
+	flex-direction: column;
+}
+
+.comment-parts{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+
+.comment-first{
+	width: 1%;
+	background-color: #3b393a;
+}
+
+
+.comment-second{
+    background-color: #e7e7e7;
+    padding:1rem;
+	margin: 1rem
+}
+
+.comment__info{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.comment__name{
+    width: 40%;
+}
+
+
